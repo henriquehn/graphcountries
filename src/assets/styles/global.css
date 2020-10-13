@@ -1,0 +1,67 @@
+:root
+{
+    font-size: 60%;
+    --color-background: #fafafa;
+    --color-top-bar-background: black;
+    --color-top-bar-text: white;
+    --color-top-bar-text-box: white;
+    --color-top-bar-text-box-content: black;
+    --color-card-background: #e7e7e7;
+    --color-card-background-dark: #e2e2e2;
+    --color-card-text-light: #007cad;
+    --color-card-border: #a7a7a7;
+    --color-box-shadow: rgb(0, 0, 0, 0.21);
+    --color-box-shadow-hover: rgb(0, 0, 0, 0.25);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root
+{
+    height: 100vh;
+}
+
+body
+{
+    background: var(--color-background);
+}
+
+#root
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+input,
+button,
+textarea,
+.link-button,
+.content
+{
+    font: 500 1.5em Verdana; /* Para ajustar o tamanho da fonte, utilize o atributo font-size: do elemento root */
+}
+
+@media (max-width: 700px) and (orientation: portrait)
+{
+    :root
+    {
+        font-size: 30%;
+    }
+}
+
+@media (max-width: 700px) and (orientation: landscape)
+{
+    :root
+    {
+        font-size: 45%;
+    }
+}

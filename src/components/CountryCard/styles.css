@@ -1,0 +1,66 @@
+.country-card
+{
+    display: inline-block;
+    width: 30rem;
+    height: 30rem;
+    background-color: var(--color-card-background);
+    border: 1rem var(--color-card-border);
+    margin: 1rem;
+    box-shadow: 0 0 0.5em var(--color-box-shadow);
+    text-align: center;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.country-card:hover
+{
+    background-color: var(--color-card-background-dark);
+    box-shadow:  0 0 1.2em var(--color-box-shadow-hover);
+    margin:  0.8rem 1.2rem 1rem 0.8rem
+}
+
+.country-card .country-flag
+{
+    display: inline-block;
+    position: relative;
+    width: 20rem;
+    height: 12rem;
+}
+
+.country-card .country-flag img
+{
+    width: 20rem;
+    height: 12rem;
+}
+
+.country-card .country-name
+{
+    display: inline-block;
+    position: relative;
+    padding: 0.2rem;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.country-card:hover .country-name
+{
+    color: var(--color-card-text-light);
+}
+
+.country-card .country-native-name
+{
+    display: inline-block;
+    position: relative;
+    padding: 0.2rem;
+    width: 100%;
+    font-size: 1em;
+}
+.country-card .country-capital-name
+{
+    display: inline-block;
+    position: relative;
+    padding: 0.2rem;
+    width: 100%;
+    font-size: 1.2em;
+}
